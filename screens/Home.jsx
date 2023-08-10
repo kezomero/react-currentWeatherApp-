@@ -1,6 +1,7 @@
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import LottieView from 'lottie-react-native'
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
         >
             <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
 
+                <LottieView source={require('../assets/home.json')}/>
+                    
                 <Text style={{fontSize:50,fontStyle:'italic',fontWeight:'bold',color:'#ccc'}}>WEATHER</Text>
                 <Text style={{fontSize:40,fontStyle:'italic',fontWeight:'normal',color:'black'}}>forecast</Text>
                 <View style={{marginTop:30,backgroundColor:'cyan',width:100,height:35,borderRadius:20,alignItems:'center',justifyContent:'center'}}>
